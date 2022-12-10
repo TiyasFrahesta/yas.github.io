@@ -13,56 +13,47 @@ function f1()
 {
     alert("Thanks Udah pilih Jawaban YA")
 }
-function f()
-{
-    if(flag==1)
-        {
-            Bn.style.bottom=500
-            Bn.style.left=150
-            flag=2
-        }
-    else if(flag==2)
-        {
-            Bn.style.bottom=300
-            Bn.style.left=10
-            flag=3
-        }
-    else if(flag==3)  
-        {
-            Bn.style.bottom=0
-            Bn.style.left=100
-            flag=1
-        }
-}
 </script>
 <style>
-  
+  body {
+  background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+  background-size: 400% 400%;
+  animation: gradient 15s ease infinite;
+  height: 100vh;
+}
+
+@keyframes gradient {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
 </style>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link
+  href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500&family=Rubik+Spray+Paint&family=Unbounded:wght@500&display=swap"
+  rel="stylesheet">
+
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css" integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous" />
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
 </head>
 <body>
     <div class="container" >
-    <nav class="navbar navbar-light bg-light" style="border-radius: 20px;">
-        <div class="container-fluid">
-          <a class="navbar-brand" href="#"><b><i class="bi-code" ></i> </b> Frhsta </a>
-        </div>
-      </nav>
-      <div class="foto" style="text-align: center; margin-top: 10px">
-      <b><h1 style="font-family: indie flower; " >Mau Ndak Jadi Pacarku?</h1> </b>
-        <img
-          src="https://i.pinimg.com/originals/88/f5/92/88f5929072a0300ecfce0fc42bbcf170.gif"
-          jsaction="load:XAeZkd;"
-          jsname="HiaYvf"
-          class="n3VNCb KAlRDb"
-          alt="Pin by Waihan on Panda | Gif lucu, Gifs lucu, Kartu lucu"
-          data-noaft="1"
-          style="width: 240px; height: 240px; margin: 59.4px 0px;">
+  
+      <div class="foto" style="text-align: center; margin-top: 50px">
+      <b><h1 style="font-family: Rubik Spray Paint;color: white; "> Klaim Mawar </h1> </b>
+        <img src="https://www.kibrispdr.org/data/1766/gambar-beruang-kartun-lucu-10.gif" jsaction="load:XAeZkd;" jsname="HiaYvf" class="n3VNCb KAlRDb" alt="Detail Gambar Beruang Kartun Lucu Koleksi Nomer 10" data-noaft="1" style="width: 300px; height: 300px; margin: 29.55px 0px;">
       </div>
       <div class="row" style="text-align: center;"> 
         <div class="col">
-       <button class="btn btn-info btn-lg" data-bs-toggle="modal" data-bs-target="#s"  style="box-shadow: 2mm 2mm 2mm black; color: white; margin: 50px">Mau?</button>
+       <button class="btn btn-info btn-lg " data-bs-toggle="modal" data-bs-target="#s"  style="box-shadow: 2mm 2mm 2mm black; color: white; ">Mau?</button>
    <div class="modal fade" id="s" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
             <div class="modal-dialog modal-dialog-centered">
               <div class="modal-content">
@@ -139,17 +130,16 @@ function f()
                  <img src="https://i.pinimg.com/originals/72/6e/57/726e574be1a8370f3d41f7d994da45f3.gif" jsaction="load:XAeZkd;" jsname="HiaYvf" class="n3VNCb KAlRDb" alt="Bubududu Panda Sticker - Bubududu Panda - Discover &amp; Share GIFs" data-noaft="1" style="width: 250px; ">
                 </div>
                 <div class="modal-footer">
-                  <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#s" >Confirm</button>
+                  <a href="index2.html">
+                  <button type="button" class="btn btn-primary"  >Confirm</button>
+                  </a>
                 </div>
               </div>
             </div>
           </div>
 </div>
 
-<div class="col">
- <button class="btn btn-info btn-lg" onMouseOver="f()" id="Bn"  style="position: absolute; box-shadow: 2mm 2mm 2mm black; color: white; margin: 50px; margin-left: -50px; position: absolute">Gamau</button>
-</div>
-</div>
+
 </div>
 </div>
  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
